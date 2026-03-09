@@ -1,0 +1,8 @@
+wikipedia==1.4.0
+nltk==3.9.3
+pandas==3.0.1
+spacy==3.8.11
+networkx==3.6.1
+matplotlib==3.10.8
+textstat==0.7.13
+seaborn==0.13.2
