@@ -3,14 +3,14 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import string
 
-
+#
 # ---------- Tree Layout Function ----------
 def hierarchy_pos(G, root, width=1., vert_gap=0.2, vert_loc=0):
 
     def _hierarchy_pos(G, root, left, right, vert_loc, pos, visited):
         if root in visited:
             return pos
-        visited.add(root)
+        visited.add(root) 
 
         pos[root] = ((left + right) / 2, vert_loc)
         children = list(G.successors(root))
