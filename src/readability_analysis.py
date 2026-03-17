@@ -2,7 +2,7 @@ import pandas as pd
 import textstat
 
 # Load cleaned dataset
-df = pd.read_csv("data/clean_sentences_dataset.csv")
+df = pd.read_csv("src/data/clean_sentences_dataset.csv")
 
 results = []
 
@@ -26,7 +26,7 @@ for _, row in df.iterrows():
 readability_df = pd.DataFrame(results)
 
 # Save results
-readability_df.to_csv("data/readability_scores.csv", index=False)
+readability_df.to_csv("src/data/readability_scores.csv", index=False)
 
 print("Readability analysis completed")
 print("Total sentences analyzed:", len(readability_df))

@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load merged dataset
-df = pd.read_csv("data/final_analysis_dataset.csv")
+df = pd.read_csv("src/data/final_analysis_dataset.csv")
 
 print("Dataset Loaded")
 print(df.head())
